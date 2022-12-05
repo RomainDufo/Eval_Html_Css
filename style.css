@@ -2,6 +2,7 @@ body{
   font-family: 'Montserrat';
 }
 
+/* Header */
 
 #logoADRAR{
     background-color: white;
@@ -37,6 +38,12 @@ h1{
     box-shadow: 0px 3px 6px #00000029;
     padding: 20px 20px 20px 0;
     margin-right: 20px;
+}
+
+/* bouton menu */
+
+#summary:hover #details:hover {
+  display: block;
 }
 
 *, *:before, *:after 
@@ -135,10 +142,34 @@ label ul {
 }
 
 
+/* footer */
 
+#container_footer {
+  display: flex ;
+  justify-content: center;
+}
 
+#container_footer div {
+  padding: 38px 50px;
+  border-top: 1px solid;
+}
 
+a {
+  color: black;
+  text-decoration: none;
+}
 
+a:hover {
+  text-decoration:underline;
+}
+
+#mention_legales p {
+  display: inline; 
+}
+
+#mention_legales a {
+  text-decoration: underline;
+}
 
 
 
