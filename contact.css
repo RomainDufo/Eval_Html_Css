@@ -1,0 +1,53 @@
+#container{
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.grid1{
+    grid-column: 1;
+}
+
+.grid2{
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+div.Toulouse, div.Montpellier, div.Perpignan, div.Tarbes, div.Carcassonne{
+    background-color: rgb(235, 245, 255);
+    width: 320px;
+    height: 180px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+div.Carcassonne{
+    height: 147px;
+}
+
+div.grid2 h3{
+    color: rgb(40, 40, 40);
+    margin-top: 5px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+div.grid2 p{
+    color: rgb(40, 40, 40);
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+a{
+    color: black;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
