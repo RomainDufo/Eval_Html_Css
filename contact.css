@@ -1,53 +1,104 @@
-#container{
+main{
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(45, 45, 65);
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0;
+    font-size: 12px;
+    flex-wrap: wrap;
+}
+
+div.contacter-nous{
+    margin: 1rem 0 1.75rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background-color: rgb(235, 245, 255);
+    padding: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+div.nomprenom{
+    display: flex;
+    gap: 14px;
+}
+
+div.checkbox{
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+
+span{
+    padding-bottom: 7px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+input{
+    border: none;
+    width:  auto;
+    height: 30px;
+    border-radius: 5px;
+}
+
+input.envoyer{
+    color: white;
+    background-color: rgb(45, 45, 65);
+}
+
+input.checkbox{
     width: auto;
     height: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
 }
 
-.grid1{
-    grid-column: 1;
-}
-
-.grid2{
-    grid-column: 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-div.Toulouse, div.Montpellier, div.Perpignan, div.Tarbes, div.Carcassonne{
-    background-color: rgb(235, 245, 255);
-    width: 320px;
-    height: 180px;
-    margin: 5px;
-    padding: 5px;
+textarea{
+    border: none;
+    width: 870px;
+    height: 100px;
     border-radius: 15px;
 }
 
-div.Carcassonne{
-    height: 147px;
+div.nomprenom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 20px;
 }
 
-div.grid2 h3{
-    color: rgb(40, 40, 40);
-    margin-top: 5px;
-    padding-left: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+.grid2{
+    display: grid;
+    align-self: start;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 6px;
+    gap: 18px;
 }
 
-div.grid2 p{
-    color: rgb(40, 40, 40);
-    padding-left: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-}
-
-a{
-    color: black;
-    padding-left: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+div.site1{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background-color: rgb(235, 245, 255);
+    border-radius: 10px;
+    padding: 6px 10px 12px;
 }

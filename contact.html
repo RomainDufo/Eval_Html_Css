@@ -6,67 +6,188 @@
         <link href="./contact.css" rel="stylesheet" type="text/css">
     </head>
 
-    <body>
+    <main>
 
-        <div id="container">
+        <div class="grid1">
+            
+            <ul>
+                <li>
+                <a href="/">Acceuil</a>
+                >
+                </li>
+                <li>
+                Contact
+                </li>
+            </ul>
 
-            <div class="grid1">
-
+            <div class="contacter-nous">
+                <h1>Contacter-nous</h1>
+                <p>Vous avez un projet de formation ? Contactez-nous pour un devis ou une demande de renseignement !</p>
             </div>
+
+                <form method="post" action="monProgramme.php">
+
+                    <div class="nomprenom">
+                        <label>
+                            <span>Votre Nom*</span>
+                            <input required type="text" name="nom" id="nom" placeholder="Nom" value/>
+                        </label>
+                        <label>
+                            <span>Votre Prénom*</span>
+                            <input required type="text" name="prenom" id="prenom" placeholder="Prénom" value/>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <span>Votre Email*</span>
+                            <input required type="email" name="email" id="email" placeholder="Email" value/>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <span>Formation envisagée*</span>
+                            <input required type="text" name="formation" id="formation" placeholder="Formation" value/>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <span>Actuellement vous êtes*</span>
+                                <select name="activitee" id="activitee">
+                                    <option hidden="">Sélectionner</option>
+                                    <option value="alternant">Alternant</option>
+                                    <option value="demandeur">Demandeur d'emploi</option>
+                                    <option value="entreprise">Entreprise</option>
+                                    <option value="salarie">Salarié</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                        </label>
+                    </div>
+                
+                    <div>
+                        <label>
+                            <span>Autre - Précisez</span>
+                                <input type="text" name="autre" id="autre" placeholder="Autre"/>
+                        </label>
+                    </div>
+
+                    <div>
+                        <p>Cochez les cases correspondant à votre situation le cas échéant:</p>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox1"/>
+                                <label for="checkbox1">Je suis Reconnue en Qualité de Travailleur Handicapé (RQTH)</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox2"/>
+                                <label for="checkbox2">Je suis en Contrat de Sécurisation Professionnelle (CSP) suite à un licenciement économique</label>
+                            </div> 
+                    </div>
+
+                    <div>
+                        <p>Votre CPF est-il alimenté ?</p>
+                            <div class="checkbox">
+                                <input type="radio" id="radio1" name="radio" value="oui"/>
+                                <label for="radio1">oui</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="radio" id="radio2" name="radio" value="non"/>
+                                <label for="radio2">non</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="radio" id="radio3" name="radio" value="jsp"/>
+                                <label for="radio3">Je ne sais pas</label>
+                            </div>
+                    </div>
+
+                    <div>
+                        <label>
+                            <span>Quel financement de votre formation avez-vous envisagé ?</span>
+                                <select name="financement" id="activitee">
+                                    <option hidden="">Sélectionner</option>
+                                    <option value="alternance">Alternance</option>
+                                    <option value="Emploi">Pôle Emploi / Région</option>
+                                    <option value="CPF">CPF</option>
+                                    <option value="jsp">Je ne sais pas</option>
+                                </select>
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <span>Message*</span>
+                            <textarea required placeholder="Message"></textarea>
+                    </div> 
+                    
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox3"/><p>J'accepte que Adra Formation collecte et utilise les données personnelles renseignées dans ce formulaire. Pour plus d'informations, vous pouvez consulter notre page politique de protection des données.</p>
+                    </div>
+                    
+                    <div>
+                        <input type="submit" value="Envoyer" class="envoyer">
+                    </div>
+
+                    </form>
+
+                </div>
 
             <div class="grid2">
-                <div class="Toulouse">
+
+                <div class="site1">
 
                     <h3>ADRAR Formation (siège)</h3>
-                    <p>Parc Technologique du Canal</p>
-                    <p>2 Rue Irène et Joliot Curie</p>
-                    <p>31520 Ramonville-Saint-Agne</p>
-                    <a>adrarinfo@adrar-formation.com<br/></a>
-                    <a>05 62 19 20 80</a>
+                    <p>Parc Technologique du Canal<br/>
+                    2 Rue Irène et Joliot Curie<br/>
+                    31520 Ramonville-Saint-Agne</p>
+                    <a href="mailto:adrarinfo@adrar-formation.com">adrarinfo@adrar-formation.com<br/></a>
+                    <a href="tel:05 62 19 20 80">05 62 19 20 80</a>
 
                 </div>
-                <div class="Montpellier">
+
+                <div class="site1">
 
                     <h3>ADRAR Montpellier</h3>
-                    <p>4657 Rue de la Jeune Parque</p>
-                    <p>Garosud</p>
-                    <p>34070 Montpellier</p>
-                    <a>montpellierinfo@adrar-formation.com<br/></a>
-                    <a>04 81 09 89 44</a>
+                    <p>4657 Rue de la Jeune Parque<br/>
+                    Garosud<br/>
+                    34070 Montpellier</p>
+                    <a href="mailto:montpellierinfo@adrar-formation.com">montpellierinfo@adrar-formation.com<br/></a>
+                    <a href="tel:04 81 09 89 44">04 81 09 89 44</a>
 
                 </div>
-                <div class="Perpignan">
+
+                <div class="site1">
 
                     <h3>ADRAR Perpignan</h3>
-                    <p>441 rue Aristide Bergès</p>
-                    <p>Bâtiment les 5 éléments</p>
-                    <p>66000 Perpignan</p>
-                    <a>perpignaninfo@adrar-formation.com<br/></a>
-                    <a>04 81 09 89 44</a>
+                    <p>441 rue Aristide Bergès<br/>
+                    Bâtiment les 5 éléments<br/>
+                    66000 Perpignan</p>
+                    <a href="mailto:perpignaninfo@adrar-formation.com">perpignaninfo@adrar-formation.com<br/></a>
+                    <a href="tel:04 81 09 89 44">04 81 09 89 44</a>
 
                 </div>
-                <div class="Tarbes">
+
+                <div class="site1">
 
                     <h3>ADRAR Tarbes</h3>
-                    <p>"Bâtiment 411"</p>
-                    <p>10 Boulevard Pierre Renaudet</p>
-                    <p>65000 Tarbes</p>
-                    <a>accueiltarbes@adrar-formation.com<br/></a>
-                    <a>05 62 93 95 16</a>
+                    <p>"Bâtiment 411"<br/>
+                    10 Boulevard Pierre Renaudet<br/>
+                    65000 Tarbes</p>
+                    <a href="mailto:accueiltarbes@adrar-formation.com">accueiltarbes@adrar-formation.com<br/></a>
+                    <a href="tel:05 62 93 95 16">05 62 93 95 16</a>
 
                 </div>
-                <div class="Carcassonne">
+
+                <div class="site1">
 
                     <h3>ADRAR Carcassonne</h3>
-                    <p>Zone du Pont Rouge - Espace Xénon</p>
-                    <p>11000 Carcassonne</p>
-                    <a>carcassonneinfo@adrar-formation.com<br/></a>
-                    <a>04 81 09 89 44</a>
+                    <p>Zone du Pont Rouge - Espace Xénon<br/>
+                    11000 Carcassonne</p>
+                    <a href="mailto:carcassonneinfo@adrar-formation.com">carcassonneinfo@adrar-formation.com<br/></a>
+                    <a href="tel:04 81 09 89 44">04 81 09 89 44</a>
 
                 </div>
+
             </div>
 
-        </div>
-
-    </body>
+    </main>
 </html>
