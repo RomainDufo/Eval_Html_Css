@@ -10,12 +10,14 @@ body {
 /* Header */
 
 .navbar {
+  display: block;
   position: fixed;
   top: 0;
   width: 100%;
   height: 7%;
   background-color: white;
   z-index: 1;
+  box-shadow: 0px 3px 6px #00000029;
 }
 
 /* Slider image */
@@ -146,13 +148,20 @@ label .menu {
 
 }
 
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+
 label .hamburger {
   position: absolute;
   top: 135px;
   left: 50px;
-  width: 30px;
-  height: 2px;
+  width: 28px;
+  height: 3px;
   background: gray;
+  border-radius: 4px;
   display: block;
   -webkit-transform-origin: center;
   transform-origin: center;
@@ -217,9 +226,9 @@ label input:checked+.menu+ul {
 label ul {
   z-index: 200;
   position: absolute;
-  top: 50%;
+  top: 150%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-80%, -50%);
   transform: translate(-50%, -50%);
   opacity: 0;
   -webkit-transition: .25s 0s ease-in-out;
@@ -233,13 +242,16 @@ label ul {
 
 #social_footer {
   text-align: center;
-  flex-direction: column;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: rgba(249, 251, 255, 255);
+
 }
 
-#reseaux_sociaux{
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+#reseaux_sociaux img {
+  padding: 0 1px;
 }
+
 
 #image1 {
   width: 321px;
@@ -260,13 +272,13 @@ label ul {
 /* Menu_footer*/
 
 #container_footer {
-  display: flex;
   justify-content: center;
+  border-top: 1px solid gray;
+  background-color: rgba(249, 251, 255, 255);
 }
 
 #container_footer div {
-  padding: 38px 50px;
-  border-top: 1px solid;
+  padding: 11px 50px;
 }
 
 a {
