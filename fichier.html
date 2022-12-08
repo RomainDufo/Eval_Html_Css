@@ -78,24 +78,23 @@
 
             </label>
         </nav>
-        <div class="slider">
-            <span id="slide-1"></span>
-            <span id="slide-2"></span>
-            <span id="slide-3"></span>
-            <div class="image-container">
-                <img src="https://www.adrar-formation.com/wp-content/uploads/2022/10/propal_slider_HQ.jpeg"
-                    class="slide" width="100%" height="300">
-                <img src="https://www.adrar-formation.com/wp-content/uploads/2022/10/propal_slider2_HQ.jpeg"
-                    class="slide" width="100%" height="300">
-                <img src="https://www.adrar-formation.com/wp-content/uploads/2022/09/propal_slider3_HQ.png"
-                    class="slide" width="100%" height="300">
+        <div class="slider-container">
+            <div class="menu">
+              <label for="slide-dot-1"></label>
+              <label for="slide-dot-2"></label>
+              <label for="slide-dot-3"></label>
             </div>
-        </div>
-        <div class="buttons">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-        </div>
+            
+            <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+            <img  class="img_slider" div="slide-img" src="https://www.adrar-formation.com/wp-content/uploads/2022/10/propal_slider_HQ.jpeg">
+      
+            <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+            <img class="img_slider" div="slide-img" src="https://www.adrar-formation.com/wp-content/uploads/2022/10/propal_slider2_HQ.jpeg">
+            
+            <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+            <img class="img_slider" div="slide-img" src="https://www.adrar-formation.com/wp-content/uploads/2022/09/propal_slider3_HQ.png">
+      
+          </div>
 
         <h1>ADRAR développe vos compétences pour l'Emploi</h1>
 
@@ -204,6 +203,9 @@
 
 
     </footer>
+
+
+    
 
 </body>
 
