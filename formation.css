@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap%27');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap%27');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+#bande_bleue{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    width: 100%;
+    height: 25px;
+    background-color: #2196F3;
+}
+
+/*............ DÉBUT BANDE HORIZANTAL AVEC PHOTO ..........*/
+
+#tete_container{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    height: 400px;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.texte_container{
+    margin-left: 100px;
+    position: relative;
+    top: 35%;
+}
+
+.image1{
+    position: relative;
+    left: 650px;
+    bottom: 119px;
+    width: auto;
+    height: 400px;
+    z-index: 3;
+
+}
+
+.button_dark{
+    background-color: black;
+    color: white;
+    font-size: .9rem;
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-align: center;
+    
+}
+
+/*................... FIN BANDE HORIZONTAL HAUT DE PAGE .....................*/
+
+.button_top{
+    background-color: lightblue;
+    padding: 5px 10px 5px 5px;
+    border-radius: 8px;
+    border: none
+}
+
+#corp_top{
+    text-align: center;    
+}
+
+.image2{
+    max-width: 100%;
+    height: 450px;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.liste1{
+    position: relative;
+    left: 600px;
+    bottom: 300px;
+}
