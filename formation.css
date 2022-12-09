@@ -56,10 +56,27 @@ body {
 /*................... FIN BANDE HORIZONTAL HAUT DE PAGE .....................*/
 
 .button_top{
-    background-color: lightblue;
+   
     padding: 5px 10px 5px 5px;
     border-radius: 8px;
     border:
+}
+
+.case{
+    display:block;
+    width: 250px;
+    line-height:80px;
+    text-align:center;
+    background-color: lightblue;
+    color:rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image:url(	https://www.adrar-formation.com/wp-content/uploads/2022/09/Nume%CC%81rique.svg);
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
+.case:hover {
+    border: 0.7mm ridge blue;
 }
 
 #corp_top{
@@ -77,4 +94,55 @@ body {
     position: relative;
     left: 600px;
     bottom: 300px;
+}
+
+#corp.container{
+    width: 90%;
+    height: 90%;
+    max-width: 1400px;
+    display: grid;
+    grid-column: 50% 50%;
+}
+
+/* BOUTON EN BAS CORPS */
+
+.bottons {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.botton-css {
+    grid-column-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2195f366;
+    border: solid 2px #2195f3bd;
+    border-radius: 10px;
+}
+
+.botton-html {
+    grid-column-start: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3752166;
+    border: solid 2px #f39521bd;
+    border-radius: 10px;
+}
+
+.botton-js {
+    grid-column-start: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3e52166;
+    border: solid 2px #d9cd1bbd;
+    border-radius: 10px;
 }
