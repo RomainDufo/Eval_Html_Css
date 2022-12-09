@@ -8,6 +8,7 @@ body {
   }
 
 
+
 /*-------------- DÉBUT BANDE HORIZANTAL AVEC PHOTO --------------*/
 
 #bande_bleue{
@@ -35,9 +36,9 @@ body {
 }
 
 .image1{
-    position: relative;
-    left: 650px;
-    bottom: 119px;
+    position: absolute;
+    left: 550px;
+    top: 8px;
     width: auto;
     height: 400px;
     z-index: 3;
@@ -56,24 +57,74 @@ body {
 
 /*-------------- FIN BANDE HORIZONTAL HAUT DE PAGE --------------*/
 
-/*-------------- CORPS --------------*/
-.case{
-    display:block;
-    width: 250px;
-    line-height:80px;
-    text-align:center;
-    background-color: lightblue;
-    color:rgb(8, 8, 8);
-    border-radius: 8px;
-    background-image:url(	https://www.adrar-formation.com/wp-content/uploads/2022/09/Nume%CC%81rique.svg);
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    padding: 5px 10px 5px 5px;
+/*--------------  CORPS --------------*/
+/*... GRID ...*/
+
+.corp_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
 }
 
+
+
+.bloc7{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+/*... BOUTON BLEUE TOP ...*/
+
+.bloc2{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+ }
+
+.bloc2 > p {
+    margin: 0;
+    width: 180px;
+    height: 65px;
+    line-height: 30px;
+    background-color: #EBF4FF;
+    border-radius: 8px;
+    background-image:url(https://www.adrar-formation.com/wp-content/uploads/2022/09/Nume%CC%81rique.svg);
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    padding: 5px 5px 5px 5px;
+}
+
+.case1{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.case2{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.case3{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.case4{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
 .case:hover {
     border: 0.7mm ridge blue;
 }
+/*--- FIN BOUTON BLEUE TOP ---*/
+
 
 #corp_top{
     text-align: center;    
@@ -114,8 +165,8 @@ body {
 }
 
 .botton-css {
-    grid-column-start: 2;
     display: flex;
+    grid-column-start: 2;
     justify-content: center;
     align-items: center;
     background-color: #2195f366;
@@ -124,7 +175,6 @@ body {
 }
 
 .botton-html {
-    grid-column-start: 3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,11 +184,20 @@ body {
 }
 
 .botton-js {
-    grid-column-start: 4;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f3e52166;
     border: solid 2px #d9cd1bbd;
     border-radius: 10px;
+}
+
+.botton-api {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3212166;
+    border: solid 2px #d91b1bbd;
+    border-radius: 10px;
+    padding: 8px;
 }
