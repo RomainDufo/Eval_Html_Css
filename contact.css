@@ -1,104 +1,280 @@
-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3%;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: rgb(45, 45, 65);
+@media only screen and (min-width: 1024px){
+    
+    body{
+        margin: 0;
+        font-size: 15px;
+        width: 100%;
+        overflow-x: hidden;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        color: rgb(25, 25, 35);
+    }
+    
+    main{
+        display: grid;
+        gap: 50px;
+        grid-template-columns: 1fr 1fr;
+        padding: 62px 10%;
+    }
+    
+    ul{
+        display: flex;
+        list-style-type: none;
+        padding-left: 0px;
+        margin: 0;
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+    
+    li:last-child {
+        color: grey;
+    }
+    
+    li{
+        padding-right: 5px;
+    }
+    
+    div.contacter-nous{
+        margin: 1rem 0 1.75rem;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        background-color: rgb(235, 245, 255);
+        padding: 1.5rem;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    div.nomprenom{
+        display: flex;
+        gap: 14px;
+    }
+    
+    div.checkbox{
+        gap: 8px;
+        display: flex;
+        align-items: center;
+    }
+    
+    span{
+        padding-bottom: 7px;
+    }
+    
+    label{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+    
+    input, textarea{
+        flex-basis: 100%;
+        background: white;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 12px;
+    }
+    
+    select{
+        border: none;
+        width:  auto;
+        height: 30px;
+        border-radius: 5px;
+    }
+    
+    input.envoyer{
+        color: white;
+        background-color: rgb(45, 45, 65);
+    }
+    
+    input[type="checkbox"]{
+        flex-basis: auto;
+        margin: 0;
+    }
+    
+    input[type="radio"]{
+        flex-basis: auto;
+        margin: 0;
+    }
+    
+    textarea{
+        flex-basis: 100%;
+        font-weight: 400;
+        margin-top: 5px;
+        resize: vertical;
+        min-height: 90px;
+    }
+    
+    div.nomprenom{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 5px;
+        column-gap: 20px;
+    }
+    
+    .grid2{
+        display: grid;
+        align-self: start;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 6px;
+        gap: 18px;
+    }
+    
+    div.site1{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        background-color: rgb(235, 245, 255);
+        border-radius: 10px;
+        padding: 6px 10px 12px;
+    }
+    
+    a{
+        color: black;
+    }
 }
 
-ul{
-    display: flex;
-    list-style-type: none;
-    padding-left: 0px;
-    margin: 0;
-    font-size: 12px;
-    flex-wrap: wrap;
-}
+@media only screen and (max-width: 1024px){
 
-div.contacter-nous{
-    margin: 1rem 0 1.75rem;
-}
+    body{
+        margin: 0;
+        font-size: 15px;
+        width: 100%;
+        overflow-x: hidden;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        color: rgb(25, 25, 35);
+    }
+    
+    main{
+        display: grid;
+        gap: 25px;
+        grid-template-rows: 1fr 1fr;
+        padding: 62px 10%;
+    }
+    
+    ul{
+        display: flex;
+        list-style-type: none;
+        padding-left: 0px;
+        margin: 0;
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+    
+    li:last-child {
+        color: grey;
+    }
+    
+    li{
+        padding-right: 5px;
+    }
+    
+    div.contacter-nous{
+        margin: 1rem 0 1.75rem;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        background-color: rgb(235, 245, 255);
+        padding: 1.5rem;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    div.nomprenom{
+        display: flex;
+        gap: 14px;
+    }
+    
+    div.checkbox{
+        gap: 8px;
+        display: flex;
+        align-items: center;
+    }
+    
+    span{
+        padding-bottom: 7px;
+    }
+    
+    label{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+    
+    input, textarea{
+        flex-basis: 100%;
+        background: white;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 12px;
+    }
+    
+    select{
+        border: none;
+        width:  auto;
+        height: 30px;
+        border-radius: 5px;
+    }
+    
+    input.envoyer{
+        color: white;
+        background-color: rgb(45, 45, 65);
+    }
+    
+    input[type="checkbox"]{
+        flex-basis: auto;
+        margin: 0;
+    }
+    
+    input[type="radio"]{
+        flex-basis: auto;
+        margin: 0;
+    }
+    
+    textarea{
+        flex-basis: 100%;
+        font-weight: 400;
+        margin-top: 5px;
+        resize: vertical;
+        min-height: 90px;
+    }
+    
+    div.nomprenom{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 5px;
+        column-gap: 20px;
+    }
+    
+    .grid2{
+        display: grid;
+        align-self: start;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        padding-top: 6px;
+        gap: 18px;
+    }
+    
+    div.site1{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        background-color: rgb(235, 245, 255);
+        border-radius: 10px;
+        padding: 6px 10px 12px;
+    }
+    
+    a{
+        color: black;
+    }
 
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    background-color: rgb(235, 245, 255);
-    padding: 1.5rem;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-div.nomprenom{
-    display: flex;
-    gap: 14px;
-}
-
-div.checkbox{
-    gap: 8px;
-    display: flex;
-    align-items: center;
-}
-
-span{
-    padding-bottom: 7px;
-}
-
-label{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-}
-
-input{
-    border: none;
-    width:  auto;
-    height: 30px;
-    border-radius: 5px;
-}
-
-input.envoyer{
-    color: white;
-    background-color: rgb(45, 45, 65);
-}
-
-input.checkbox{
-    width: auto;
-    height: auto;
-}
-
-textarea{
-    border: none;
-    width: 870px;
-    height: 100px;
-    border-radius: 15px;
-}
-
-div.nomprenom{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 5px;
-    column-gap: 20px;
-}
-
-.grid2{
-    display: grid;
-    align-self: start;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 6px;
-    gap: 18px;
-}
-
-div.site1{
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    background-color: rgb(235, 245, 255);
-    border-radius: 10px;
-    padding: 6px 10px 12px;
 }
