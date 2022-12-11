@@ -217,7 +217,7 @@ img {
   left: 90%;
   z-index: 120;
   width: 100%;
-  bottom: 50%;
+  top: 25%;
 }
 .menu label {
   cursor: pointer;
@@ -253,8 +253,19 @@ img {
 /*..... TEXTE DANS SLIDER .....*/
 
 #slider_texte_container{
-  position: fixed;
-  bottom: 680px;
+  position: absolute;
+  top: 350px;
+  left: -55px;
+  z-index: 70;
+}
+
+.image_recherche{
+  width : 35px; 
+  height : 35px;
+  border: none;
+  -moz-border-radius : 75px;
+  -webkit-border-radius : 75px;
+  border-radius : 75px;
 }
 
 h1 {
