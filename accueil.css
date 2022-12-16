@@ -450,6 +450,11 @@ a {
       height: 65px;
   }
 
+  #social_container{
+    display: flex;
+    height: 71px;
+  }
+
   #reseaux_formation{
       height: 60px;
       padding-bottom: 50px;
@@ -563,7 +568,7 @@ a {
     left: -25px;
   }
   /*----- FIN HEADER -----*/
-  
+
   /*----- FOOTER -----*/
 
    #container_footer{
