@@ -1,0 +1,262 @@
+@media screen and (max-width: 1024px) {
+    body
+{
+    background-color: rgb(252, 252, 235);
+    margin: 80px;
+    padding: 0;
+}
+    /* 4 blocs par profil  */
+
+.caseb1{
+    display:block;
+    width: 200px;
+    line-height:80px;
+    text-align:center;
+    background-color: #c0c2c4;
+    color:rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image:url(https://www.adrar-formation.com/wp-content/uploads/2022/09/Alternant.svg);
+    background-repeat: no-repeat;
+}
+.caseb2{
+    display:block;
+    width: 200px;
+    line-height:80px;
+    text-align:center;
+    background-color: #c0c2c4;
+    color:rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image:url(https://www.adrar-formation.com/wp-content/uploads/2022/09/Demandeurs_demploi.svg);
+    background-repeat: no-repeat;
+}
+.caseb3{
+    display:block;
+    width: 200px;
+    line-height:80px;
+    text-align:center;
+    background-color: #c0c2c4;
+    color:rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image:url(https://www.adrar-formation.com/wp-content/uploads/2022/09/Entreprise.svg);
+    background-repeat: no-repeat;
+}
+.caseb4{
+    display:block;
+    width: 200px;
+    line-height:80px;
+    text-align:center;
+    background-color: #c0c2c4;
+    color:rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image:url(https://www.adrar-formation.com/wp-content/uploads/2022/09/Salarie%CC%81s.svg);
+    background-repeat: no-repeat;
+}
+
+.boutonhoriz{
+    text-align: center;
+}
+
+
+
+/* 8 blocs par secteur  */
+
+
+.casea1{
+    display:block;
+    width: 200px;
+    line-height:80px;
+    text-align:center;
+    background-color: #fcbc81;
+    color:rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image:url(https://www.adrar-formation.com/wp-content/uploads/2022/09/bat-genie-therma-clim.svg);
+    background-repeat: no-repeat;
+}
+.casea1:hover {
+    border: 0.7mm ridge rgb(207, 123, 13);
+}
+
+.casea2{
+    display:block;
+    width: 200px;
+    line-height:80px;
+    text-align:center;
+    background-color: #9bdaf5;
+    color:rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image:url(https://www.adrar-formation.com/wp-content/uploads/2022/09/Nume%CC%81rique.svg);
+    background-repeat: no-repeat;
+}
+.casea2:hover {
+    border: 0.7mm ridge rgb(12, 77, 175);
+}
+
+.casea3{
+    display:block;
+    width: 200px;
+    line-height:80px;
+    text-align:center;
+    background-color: #cbe5cc;
+    color:rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image:url(https://www.adrar-formation.com/wp-content/uploads/2022/09/Sante%CC%81Social.svg);
+    background-repeat: no-repeat;
+}
+.casea3:hover {
+    border: 0.7mm ridge #57a85a;
+}
+.casea4{
+    display:block;
+    width: 200px;
+    line-height:80px;
+    text-align:center;
+    background-color: #fcbc81;
+    color:rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image:url(https://www.adrar-formation.com/wp-content/uploads/2022/09/E%CC%81lectricite%CC%81Re%CC%81seaux_Te%CC%81le%CC%81coms.svg);
+    background-repeat: no-repeat;
+}
+.casea4:hover {
+    border: 0.7mm ridge rgb(207, 123, 13);
+}
+.casea5{
+    display:block;
+    width: 200px;
+    line-height:80px;
+    text-align:center;
+    background-color: #fccbc8;
+    color:rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image:url(https://www.adrar-formation.com/wp-content/uploads/2022/09/Carrie%CC%80resEmploi.svg);
+    background-repeat: no-repeat;
+}
+.casea5:hover {
+    border: 0.7mm ridge #f44336;
+}
+
+.casea6{
+    display:block;
+    width: 200px;
+    line-height:80px;
+    text-align:center;
+    background-color:#fcbc81;
+    color:rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image:url(https://www.adrar-formation.com/wp-content/uploads/2022/09/Syste%CC%80mes_Embarque%CC%81s.svg);
+    background-repeat: no-repeat;
+}
+.casea6:hover {
+    border: 0.7mm ridge rgb(207, 123, 13);
+}
+
+.casea7{
+    display:block;
+    width: 200px;
+    line-height:80px;
+    text-align:center;
+    background-color: #fcbc81;
+    color:rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image:url(https://www.adrar-formation.com/wp-content/uploads/2022/09/Qualite%CC%81Se%CC%81curite%CC%81Environnement.svg);
+    background-repeat: no-repeat;
+}
+.casea7:hover {
+    border: 0.7mm ridge rgb(207, 123, 13);
+}
+.casea8{
+    display:block;
+    width: 200px;
+    line-height:80px;
+    text-align:center;
+    background-color: #9bdaf5;
+    color:rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image:url(https://www.adrar-formation.com/wp-content/uploads/2022/09/Tertiaire.svg);
+    background-repeat: no-repeat;
+}
+.casea8:hover {
+    border: 0.7mm ridge rgb(12, 77, 175);
+}
+
+  }
+
+
+  .blcentre{
+text-align: center;
+  }
+
+  .villes1{
+    display:block;
+    width: 500px;
+    line-height:80px;
+    text-align:center;
+    background-color: #9bdaf5;
+    color:rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image: url('https://www.adrar-formation.com/wp-content/uploads/2022/08/ramonville.png');
+}
+
+.villes2{
+    display:block;
+    width: 500px;
+    line-height:80px;
+    text-align:center;
+    background-color: #9bdaf5;
+    color:rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image: url('https://www.adrar-formation.com/wp-content/uploads/2022/08/montpellier.png');
+}
+
+.villes3{
+    display:block;
+    width: 500px;
+    line-height:80px;
+    text-align:center;
+    background-color: #9bdaf5;
+    color:rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image: url('https://www.adrar-formation.com/wp-content/uploads/2022/08/perpignan.png');
+}
+
+.villes4{
+    display:block;
+    width: 500px;
+    line-height:80px;
+    text-align:center;
+    background-color: #9bdaf5;
+    color:rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image: url('https://www.adrar-formation.com/wp-content/uploads/2022/08/tarbes.png');
+}
+
+.villes5{
+    display:block;
+    width: 500px;
+    line-height:80px;
+    text-align:center;
+    background-color: #9bdaf5;
+    color:rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image: url('https://www.adrar-formation.com/wp-content/uploads/2022/08/carcassonne.png');
+}
+.header{
+    width: 500px;
+}
+
+
+
+.blocorbleu{
+    background-color: #a7ddf5;
+    height: 200px;
+     width: 400px;
+     justify-content: space-evenly;
+     border-radius: 10px;
+}
+
+.blocor{
+    background-color: #f7c77f;
+    height: 200px;
+    width: 400px;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
