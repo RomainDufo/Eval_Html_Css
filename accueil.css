@@ -562,12 +562,15 @@ a {
     top: 155px;
     left: -25px;
   }
+  /*----- FIN HEADER -----*/
+  
   /*----- FOOTER -----*/
 
    #container_footer{
     grid-template-columns: none;
-    padding: 0%;
+    padding: 20px 0px;
   }
+
 
   #social_container{
     display: flex;
