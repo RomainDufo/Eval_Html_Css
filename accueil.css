@@ -527,21 +527,44 @@ a {
   body{
     max-width: 425px;
   }
+/*----- HEADER -----*/
 
   .menu-items{
     margin-left: -52px;
   }
-
-  #bar_top{
-    max-width: 425px;
-   } 
 
   .nav-container {
     max-width: 425px;
     right: -20px;
   }
 
-  #container_footer{
+  .nav-container a{
+    font-weight: normal;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .slide-img{
+    height: 220px;
+  }
+
+  .slider-container{
+    height: 220px;
+  }
+
+  #bar_top{
+    max-width: 425px;
+   } 
+
+  #slider_texte_container{
+    top: 155px;
+    left: -25px;
+  }
+  /*----- FOOTER -----*/
+
+   #container_footer{
     grid-template-columns: none;
     padding: 0%;
   }
@@ -551,7 +574,7 @@ a {
     flex-direction: column;
     justify-content: center;
     grid-template-columns: none;
-    height: 250px;
+    height: 160px;
   }
 
   #reseaux_formation{
