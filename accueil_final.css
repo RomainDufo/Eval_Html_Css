@@ -999,6 +999,11 @@ a {
 
 
   /*----- CORPS PRINCIPAL -----*/
+  #corp_principal {
+    background-color: rgb(252, 252, 235);
+    margin: 80px;
+    padding: 0;
+  }
 
   .caseb1 {
     display: block;
@@ -1183,6 +1188,87 @@ a {
 
   .casea8:hover {
     border: 0.7mm ridge rgb(12, 77, 175);
+  }
+
+  .blcentre {
+    text-align: center;
+  }
+
+  .villes1 {
+    display: block;
+    width: 500px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #9bdaf5;
+    color: rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image: url('https://www.adrar-formation.com/wp-content/uploads/2022/08/ramonville.png');
+  }
+
+  .villes2 {
+    display: block;
+    width: 500px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #9bdaf5;
+    color: rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image: url('https://www.adrar-formation.com/wp-content/uploads/2022/08/montpellier.png');
+  }
+
+  .villes3 {
+    display: block;
+    width: 500px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #9bdaf5;
+    color: rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image: url('https://www.adrar-formation.com/wp-content/uploads/2022/08/perpignan.png');
+  }
+
+  .villes4 {
+    display: block;
+    width: 500px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #9bdaf5;
+    color: rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image: url('https://www.adrar-formation.com/wp-content/uploads/2022/08/tarbes.png');
+  }
+
+  .villes5 {
+    display: block;
+    width: 500px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #9bdaf5;
+    color: rgb(8, 8, 8);
+    border-radius: 30px;
+    background-image: url('https://www.adrar-formation.com/wp-content/uploads/2022/08/carcassonne.png');
+  }
+
+  .header {
+    width: 500px;
+  }
+
+
+
+  .blocorbleu {
+    background-color: #a7ddf5;
+    height: 200px;
+    width: 400px;
+    justify-content: space-evenly;
+    border-radius: 10px;
+  }
+
+  .blocor {
+    background-color: #f7c77f;
+    height: 200px;
+    width: 400px;
+    justify-content: space-evenly;
+    border-radius: 10px;
   }
 
   /*----- FIN CORPS PRINCIPAL -----*/
