@@ -395,6 +395,12 @@ footer:hover {
   width: 30px;
   height: 30px;
 }
+.imgs1{
+  width: 50px;
+}
+.imgs2{
+  width: 22px;
+}
 
 .p1 {
   display: flex;
@@ -778,4 +784,3 @@ a {
   }
   /*----- FIN FOOTER -----*/
 }
-
