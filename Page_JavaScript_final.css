@@ -573,6 +573,7 @@ a {
         font-family: 'Montserrat', sans-serif;
         font-size: 100%;
         margin-left: 5px;
+        margin-top: 10px;
     }
 
     h2,
@@ -589,6 +590,14 @@ a {
         text-align: center;
         font-size: 100%;
     }
+    
+   
+    .exemple{
+        font-size: 100%;
+    }
+    
+    #right h3{
+        margin-top: 10px;
 
     .para {
 
