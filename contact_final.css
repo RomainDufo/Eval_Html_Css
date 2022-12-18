@@ -1,10 +1,417 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap%27');
+@media only screen and (min-width: 1024px){
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap%27');
+/*----------------------  *****NAVBAR***** ----------------------*/
 
-body {
-  font-family: 'Montserrat', sans-serif;
+    #bar_top {
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        background-color: white;
+        z-index: 100;
+        top: 0;
+        border-radius: 2px;
+        box-shadow: 0px 3px 6px #00000029;
+    }
+  
+    #logoADRAR {
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        left: 31px;
+        z-index: 100;
+        width: 68px;
+        height: 85px;
+    }
+  
+  /*  OK NE PAS TOUCHER */
+  
+  /* --------------- HAMBURGER ---------------*/
+  
+    * {
+        margin: 0;
+        padding: 0;
+    }
+  
+    .container {
+        max-width: 1050px;
+        width: 90%;
+        margin: auto;
+    }
+  
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 62px;
+    }
+  
+    .nav-container {
+        display: block;
+        position: relative;
+        height: 60px;
+        right: -50px;
+    }
+  
+    .menu-items {
+        display: flex;
+    }
+  
+    .menu-items li {
+        list-style: none;
+    }
+  
+/*... LIEN/TEXTE NAVBAR ...*/
+  
+    .nav-container a {
+        text-decoration: none;
+        color: #0e2431;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        padding: 0.7rem;
+    }
+  
+    .nav-container ul {
+        padding-bottom: 20px;
+    }  
+
+    #contact_menu button {
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        border-radius: 5px;
+        width: 180px;
+        height: 35px;
+        text-decoration: none;
+        border-style: none;
+    }
+  
+/*... FIN LIEN/TEXTE NAVBAR ...*/
+  
+    .nav-container a:hover {
+        font-weight: bolder;
+    }
+
+    .nav-container .checkbox {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 32px;
+        top: 20px;
+        right: 22px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+  
+    .nav-container .hamburger-lines {
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 17px;
+        right: 22px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+  
+/*..... BOUTON HAMBURGER .....*/
+  
+    .nav-container .hamburger-lines .line {
+        display: block;
+        width: 100%;
+        height: 1px;
+        border-radius: 4px;
+        background: gray;
+    }
+  
+    .nav-container .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+  
+    .nav-container .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+  
+    .nav-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: 0.4s ease-in-out;
+    }
+
+  /*..... FIN BOUTON HAMBURGER .....*/
+  
+  /*..... ONGLET HAMBURGER .....*/
+  
+    .menu-items {
+        background-color: #F9FBFF;
+        padding-top: 50px;
+        height: 90vh;
+        width: 100vw;
+        transform: translate(150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -110px;
+        padding-left: 50px;
+        margin-top: 36.3px;
+        transition: transform 0.5s ease-in-out;
+        z-index: 80;
+    }
+  
+    .menu-items li {
+        margin-bottom: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+  
+    .nav-container input[type="checkbox"]:checked~.menu-items {
+        transform: translateX(0);
+    }
+  
+    .nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+        transform: rotate(45deg);
+    }
+  
+    .nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+        transform: scaleY(0);
+    }
+  
+    .nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+        transform: rotate(-45deg);
+    }
+  
+    .nav-container input[type="checkbox"]:checked~.logo {
+        display: none;
+    }
+  
+/* ######################### Main ######################### */
+
+    body{
+        margin: 0;
+        font-size: 15px;
+        width: 100%;
+        overflow-x: hidden;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        color: rgb(25, 25, 35);
+    }
+    
+    main{
+        margin-top: 40px;
+        display: grid;
+        gap: 50px;
+        grid-template-columns: 1fr 1fr;
+        padding: 62px 10%;
+    }
+    
+    ul{
+        display: flex;
+        list-style-type: none;
+        padding-left: 0px;
+        margin: 0;
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+    
+    li:last-child {
+        color: grey;
+    }
+    
+    li{
+        padding-right: 5px;
+    }
+    
+    div.contacter-nous{
+        margin: 1rem 0 1.75rem;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        background-color: rgb(235, 245, 255);
+        padding: 1.5rem;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    div.nomprenom{
+        display: flex;
+        gap: 14px;
+    }
+    
+    div.checkbox{
+        gap: 8px;
+        display: flex;
+        align-items: center;
+    }
+    
+    span{
+        padding-bottom: 7px;
+    }
+    
+    label{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+    
+    input, textarea{
+        flex-basis: 100%;
+        background: white;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 12px;
+        font-size: 15px;
+    }
+    
+    select{
+        border: none;
+        width:  auto;
+        height: 30px;
+        border-radius: 5px;
+    }
+    
+    input.envoyer{
+        color: white;
+        background-color: rgb(45, 45, 65);
+    }
+    
+    input[type="checkbox"]{
+        flex-basis: auto;
+        margin: 0;
+    }
+    
+    input[type="radio"]{
+        flex-basis: auto;
+        margin: 0;
+    }
+    
+    textarea{
+        flex-basis: 100%;
+        font-weight: 400;
+        margin-top: 5px;
+        resize: vertical;
+        min-height: 90px;
+    }
+    
+    div.nomprenom{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 5px;
+        column-gap: 20px;
+    }
+    
+    .grid2{
+        display: grid;
+        align-self: start;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 6px;
+        gap: 18px;
+    }
+    
+    div.site1{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        background-color: rgb(235, 245, 255);
+        border-radius: 10px;
+        padding: 6px 10px 12px;
+    }
+    
+    a{
+        color: black;
+    }
+
+/* ######################### Footer ######################### */
+
+    /* social_footer */
+
+    #social_container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color: rgba(249, 251, 255, 255);
+        padding: 1% 10%;
+        height: 65px;
+    }
+  
+    #reseaux_formation{
+        height: 60px;
+        padding-bottom: 50px;
+    }
+  
+    #reseaux_sociaux{
+        padding: 0 1px;
+        text-align: right;
+        height: 60px;
+        margin-top: 10px;
+    }
+  
+    #reseaux_sociaux img {
+        padding: 0 12px;
+    }
+  
+    #image1 {
+        width: 321px;
+        height: 54px;
+    }
+
+/* Menu_footer*/
+  
+    #container_footer {
+        justify-content: center;
+        border-top: 1px solid gray;
+        background-color: rgba(249, 251, 255, 255);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 18px;
+        padding: 42px 72px;
+    }
+  
+    #container_footer div {
+        flex-direction: column ;
+    }
+  
+    #container_footer div p {
+        padding: 11px 25px;
+        text-align: left;
+    }
+  
+    #container_footer div h3 {
+        padding: 11px 25px;
+        text-align: left;
+    }
+  
+    a {
+        color: black;
+        text-decoration: none;
+    }
+  
+    a:hover {
+        text-decoration: underline;
+    }
+  
+    #mention_container{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin: 1.5% 6%;
+    }
+  
+    #mention_container p {
+        display: inline;
+    }
+  
+    #mention_container a {
+        text-decoration: underline;
+    }
+
 }
+
+@media only screen and (max-width: 1023px){
 
 /*----------------------  *****NAVBAR***** ----------------------*/
 
@@ -27,12 +434,12 @@ body {
     z-index: 100;
     width: 68px;
     height: 85px;
-
 }
 
 /*  OK NE PAS TOUCHER */
 
 /* --------------- HAMBURGER ---------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -67,6 +474,7 @@ body {
 }
 
 /*... LIEN/TEXTE NAVBAR ...*/
+
 .nav-container a {
     text-decoration: none;
     color: #0e2431;
@@ -77,7 +485,7 @@ body {
 
 .nav-container ul {
     padding-bottom: 20px;
-}
+}  
 
 #contact_menu button {
     background-color: black;
@@ -96,8 +504,6 @@ body {
 .nav-container a:hover {
     font-weight: bolder;
 }
-
-
 
 .nav-container .checkbox {
     position: absolute;
@@ -128,8 +534,8 @@ body {
 
 .nav-container .hamburger-lines .line {
     display: block;
-    height: 3px;
     width: 100%;
+    height: 1px;
     border-radius: 4px;
     background: gray;
 }
@@ -150,10 +556,9 @@ body {
 
 /*..... FIN BOUTON HAMBURGER .....*/
 
-
 /*..... ONGLET HAMBURGER .....*/
-.menu-items {
 
+.menu-items {
     background-color: #F9FBFF;
     padding-top: 50px;
     height: 90vh;
@@ -173,8 +578,6 @@ body {
     font-size: 1.5rem;
     font-weight: 500;
 }
-
-
 
 .nav-container input[type="checkbox"]:checked~.menu-items {
     transform: translateX(0);
@@ -196,518 +599,9 @@ body {
     display: none;
 }
 
-/*..... FIN ONGLET HAMBURGER .....*/
+/* ######################### Main ######################### */
 
-/*-----------------------------------------------------------------------*/
-
-
-
-
-
-@media only screen and (max-width: 1024px) {
-
-    /* social_footer */
-
-  #social_container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: rgba(249, 251, 255, 255);
-    padding: 1% 10%;
-    height: 65px;
-  }
-
-  #social_container {
-    display: flex;
-    height: 71px;
-  }
-
-  #reseaux_formation {
-    height: 60px;
-    padding-bottom: 50px;
-  }
-
-  #reseaux_sociaux {
-    padding: 0 1px;
-    text-align: right;
-    height: 60px;
-    margin-top: 10px;
-  }
-
-  #reseaux_sociaux img {
-    padding: 0 12px;
-  }
-
-  #image1 {
-    width: 321px;
-    height: 54px;
-  }
-
-  /* Menu_footer*/
-
-  #container_footer {
-    justify-content: center;
-    border-top: 1px solid gray;
-    background-color: rgba(249, 251, 255, 255);
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 18px;
-    padding: 42px 72px;
-  }
-
-  #container_footer div {
-    flex-direction: column;
-  }
-
-  #container_footer div p {
-    padding: 11px 25px;
-    text-align: left;
-  }
-
-  #container_footer div h3 {
-    padding: 11px 25px;
-    text-align: left;
-  }
-
-  a {
-    color: black;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  #mention_container {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    margin: 1.5% 6%;
-  }
-
-  #mention_container p {
-    display: inline;
-  }
-
-  #mention_container a {
-    text-decoration: underline;
-  }
-
-    /* ######################### Main ######################### */
-
-    body {
-        margin: 0;
-        font-size: 15px;
-        width: 100%;
-        overflow-x: hidden;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 300;
-        color: rgb(25, 25, 35);
-    }
-
-    main {
-        margin-top: 40px;
-        display: grid;
-        gap: 50px;
-        grid-template-columns: 1fr 1fr;
-        padding: 62px 10%;
-    }
-
-    ul {
-        display: flex;
-        list-style-type: none;
-        padding-left: 0px;
-        margin: 0;
-        font-size: 12px;
-        flex-wrap: wrap;
-    }
-
-    li:last-child {
-        color: grey;
-    }
-
-    li {
-        padding-right: 5px;
-    }
-
-    div.contacter-nous {
-        margin: 1rem 0 1.75rem;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
-        background-color: rgb(235, 245, 255);
-        padding: 1.5rem;
-        border: none;
-        border-radius: 10px;
-        font-size: 16px;
-        font-weight: 400;
-    }
-
-    div.nomprenom {
-        display: flex;
-        gap: 14px;
-    }
-
-    div.checkbox {
-        gap: 8px;
-        display: flex;
-        align-items: center;
-    }
-
-    span {
-        padding-bottom: 7px;
-    }
-
-    label {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 100%;
-    }
-
-    input,
-    textarea {
-        flex-basis: 100%;
-        background: white;
-        border: none;
-        border-radius: 5px;
-        padding: 8px 12px;
-        font-size: 15px;
-    }
-
-    select {
-        border: none;
-        width: auto;
-        height: 30px;
-        border-radius: 5px;
-    }
-
-    input.envoyer {
-        color: white;
-        background-color: rgb(45, 45, 65);
-    }
-
-    input[type="checkbox"] {
-        flex-basis: auto;
-        margin: 0;
-    }
-
-    input[type="radio"] {
-        flex-basis: auto;
-        margin: 0;
-    }
-
-    textarea {
-        flex-basis: 100%;
-        font-weight: 400;
-        margin-top: 5px;
-        resize: vertical;
-        min-height: 90px;
-    }
-
-    div.nomprenom {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        row-gap: 5px;
-        column-gap: 20px;
-    }
-
-    .grid2 {
-        display: grid;
-        align-self: start;
-        grid-template-columns: 1fr 1fr;
-        padding-top: 6px;
-        gap: 18px;
-    }
-
-    div.site1 {
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-        background-color: rgb(235, 245, 255);
-        border-radius: 10px;
-        padding: 6px 10px 12px;
-    }
-
-    a {
-        color: black;
-    }
-
-    /* ######################### Footer ######################### */
-
-    /* social_footer */
-
-    #social_container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        background-color: rgba(249, 251, 255, 255);
-        padding: 1% 10%;
-        height: 65px;
-    }
-
-    #reseaux_formation {
-        height: 60px;
-        padding-bottom: 50px;
-    }
-
-    #reseaux_sociaux {
-        padding: 0 1px;
-        text-align: right;
-        height: 60px;
-        margin-top: 10px;
-    }
-
-    #reseaux_sociaux img {
-        padding: 0 12px;
-    }
-
-    #image1 {
-        width: 321px;
-        height: 54px;
-    }
-
-    /* Menu_footer*/
-
-    #container_footer {
-        justify-content: center;
-        border-top: 1px solid gray;
-        background-color: rgba(249, 251, 255, 255);
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 18px;
-        padding: 42px 72px;
-    }
-
-    #container_footer div {
-        flex-direction: column;
-    }
-
-    #container_footer div p {
-        padding: 11px 25px;
-        text-align: left;
-    }
-
-    #container_footer div h3 {
-        padding: 11px 25px;
-        text-align: left;
-    }
-
-    a {
-        color: black;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    #mention_container {
-        display: grid;
-        grid-template-columns: 40% 60%;
-        margin: 1.5% 6%;
-    }
-
-    #mention_container p {
-        display: inline;
-    }
-
-    #mention_container a {
-        text-decoration: underline;
-    }
-
-}
-
-@media only screen and (max-width: 1023px) {
-
-    /*----------------------  *****NAVBAR***** ----------------------*/
-
-    #bar_top {
-        position: fixed;
-        width: 100%;
-        height: 60px;
-        background-color: white;
-        z-index: 100;
-        top: 0;
-        border-radius: 2px;
-        box-shadow: 0px 3px 6px #00000029;
-    }
-
-    #logoADRAR {
-        background-color: white;
-        position: fixed;
-        top: 0px;
-        left: 31px;
-        z-index: 100;
-        width: 68px;
-        height: 85px;
-    }
-
-    /*  OK NE PAS TOUCHER */
-
-    /* --------------- HAMBURGER ---------------*/
-
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    .container {
-        max-width: 1050px;
-        width: 90%;
-        margin: auto;
-    }
-
-    .nav-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 62px;
-    }
-
-    .nav-container {
-        display: block;
-        position: relative;
-        height: 60px;
-        right: -50px;
-    }
-
-    .menu-items {
-        display: flex;
-    }
-
-    .menu-items li {
-        list-style: none;
-    }
-
-    /*... LIEN/TEXTE NAVBAR ...*/
-
-    .nav-container a {
-        text-decoration: none;
-        color: #0e2431;
-        font-weight: bolder;
-        font-size: 1.2rem;
-        padding: 0.7rem;
-    }
-
-    .nav-container ul {
-        padding-bottom: 20px;
-    }
-
-    #contact_menu button {
-        background-color: black;
-        color: white;
-        font-size: 18px;
-        font-weight: 400;
-        border-radius: 5px;
-        width: 180px;
-        height: 35px;
-        text-decoration: none;
-        border-style: none;
-    }
-
-    /*... FIN LIEN/TEXTE NAVBAR ...*/
-
-    .nav-container a:hover {
-        font-weight: bolder;
-    }
-
-    .nav-container .checkbox {
-        position: absolute;
-        display: block;
-        height: 32px;
-        width: 32px;
-        top: 20px;
-        right: 22px;
-        z-index: 5;
-        opacity: 0;
-        cursor: pointer;
-    }
-
-    .nav-container .hamburger-lines {
-        display: block;
-        height: 26px;
-        width: 32px;
-        position: absolute;
-        top: 17px;
-        right: 22px;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    /*..... BOUTON HAMBURGER .....*/
-
-    .nav-container .hamburger-lines .line {
-        display: block;
-        width: 100%;
-        height: 1px;
-        border-radius: 4px;
-        background: gray;
-    }
-
-    .nav-container .hamburger-lines .line1 {
-        transform-origin: 0% 0%;
-        transition: transform 0.4s ease-in-out;
-    }
-
-    .nav-container .hamburger-lines .line2 {
-        transition: transform 0.2s ease-in-out;
-    }
-
-    .nav-container .hamburger-lines .line3 {
-        transform-origin: 0% 100%;
-        transition: 0.4s ease-in-out;
-    }
-
-    /*..... FIN BOUTON HAMBURGER .....*/
-
-    /*..... ONGLET HAMBURGER .....*/
-
-    .menu-items {
-        background-color: #F9FBFF;
-        padding-top: 50px;
-        height: 90vh;
-        width: 100vw;
-        transform: translate(150%);
-        display: flex;
-        flex-direction: column;
-        margin-left: -110px;
-        padding-left: 50px;
-        margin-top: 36.3px;
-        transition: transform 0.5s ease-in-out;
-        z-index: 80;
-    }
-
-    .menu-items li {
-        margin-bottom: 1.2rem;
-        font-size: 1.5rem;
-        font-weight: 500;
-    }
-
-    .nav-container input[type="checkbox"]:checked~.menu-items {
-        transform: translateX(0);
-    }
-
-    .nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
-        transform: rotate(45deg);
-    }
-
-    .nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
-        transform: scaleY(0);
-    }
-
-    .nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
-        transform: rotate(-45deg);
-    }
-
-    .nav-container input[type="checkbox"]:checked~.logo {
-        display: none;
-    }
-
-    /* ######################### Main ######################### */
-
-    body {
+    body{
         margin: 0;
         margin-top: 30px;
         font-size: 25px;
@@ -717,15 +611,15 @@ body {
         font-weight: 300;
         color: rgb(25, 25, 35);
     }
-
-    main {
+    
+    main{
         display: grid;
         gap: 25px;
         grid-template-rows: 1fr 1fr;
         padding: 62px 10%;
     }
-
-    ul {
+    
+    ul{
         display: flex;
         list-style-type: none;
         padding-left: 0px;
@@ -733,20 +627,20 @@ body {
         font-size: 30px;
         flex-wrap: wrap;
     }
-
+    
     li:last-child {
         color: grey;
     }
-
-    li {
+    
+    li{
         padding-right: 5px;
     }
-
-    div.contacter-nous {
+    
+    div.contacter-nous{
         margin: 1rem 0 1.75rem;
     }
-
-    form {
+    
+    form{
         display: flex;
         flex-direction: column;
         gap: 18px;
@@ -757,30 +651,29 @@ body {
         font-size: 35px;
         font-weight: 400;
     }
-
-    div.nomprenom {
+    
+    div.nomprenom{
         display: flex;
         gap: 14px;
     }
-
-    div.checkbox {
+    
+    div.checkbox{
         gap: 8px;
         display: flex;
         align-items: center;
     }
-
-    span {
+    
+    span{
         padding-bottom: 7px;
     }
-
-    label {
+    
+    label{
         display: flex;
         flex-direction: column;
         flex-basis: 100%;
     }
-
-    input,
-    textarea {
+    
+    input, textarea{
         flex-basis: 100%;
         background: white;
         border: none;
@@ -788,62 +681,62 @@ body {
         padding: 27px 12px;
         font-size: 30px;
     }
-
-    select {
+    
+    select{
         border: none;
-        width: auto;
+        width:  auto;
         height: 30px;
         border-radius: 15px;
         height: 67px;
         font-size: 30px;
     }
 
-    input.envoyer {
+    input.envoyer{
         color: white;
         background-color: rgb(45, 45, 65);
         padding: 27px 82px;
     }
-
-    input[type="checkbox"] {
+    
+    input[type="checkbox"]{
         flex-basis: auto;
         margin: 0;
         margin-right: 15px;
         height: 30px;
         width: 30px;
     }
-
-    input[type="radio"] {
+    
+    input[type="radio"]{
         flex-basis: auto;
         margin: 0;
         margin-right: 15px;
         height: 30px;
         width: 30px;
     }
-
-    textarea {
+    
+    textarea{
         flex-basis: 100%;
         font-weight: 400;
         margin-top: 5px;
         resize: vertical;
         min-height: 450px;
     }
-
-    div.nomprenom {
+    
+    div.nomprenom{
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 5px;
         column-gap: 20px;
     }
-
-    .grid2 {
+    
+    .grid2{
         display: grid;
         align-self: start;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         padding-top: 6px;
         gap: 18px;
     }
-
-    div.site1 {
+    
+    div.site1{
         display: flex;
         flex-direction: column;
         gap: 14px;
@@ -851,24 +744,24 @@ body {
         border-radius: 10px;
         padding: 6px 10px 12px;
     }
-
-    a {
+    
+    a{
         color: black;
     }
 
-    /* ######################### Footer ######################### */
+/* ######################### Footer ######################### */
 
     /* social_footer */
 
     #social_container {
         display: grid;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2,1fr);
         background-color: rgba(249, 251, 255, 255);
         padding: 1% 10%;
         height: 300px;
     }
-
-    #reseaux_formation {
+  
+    #reseaux_formation{
         display: grid;
         height: 60px;
         padding-bottom: 50px;
@@ -879,7 +772,7 @@ body {
         width: auto;
         padding-bottom: 20px;
     }
-
+  
     img#image2:last-child {
         height: 150px;
         width: 150px;
@@ -902,24 +795,24 @@ body {
         margin-right: 150px;
     }
 
-    #reseaux_sociaux {
+    #reseaux_sociaux{
         padding: 0 1px;
         text-align: right;
         height: 60px;
         margin-top: 10px;
     }
-
+  
     #reseaux_sociaux img {
         padding: 0 12px;
     }
-
+  
     #image1 {
         width: 321px;
         height: 54px;
     }
 
-    /* Menu_footer*/
-
+/* Menu_footer*/
+  
     #container_footer {
         justify-content: start;
         border-top: 1px solid gray;
@@ -928,40 +821,40 @@ body {
         gap: 18px;
         padding: 42px 72px;
     }
-
+  
     #container_footer div {
-        flex-direction: column;
+        flex-direction: column ;
     }
-
+  
     #container_footer div p {
         padding: 11px 25px;
         text-align: left;
     }
-
+  
     #container_footer div h3 {
         padding: 11px 25px;
         text-align: left;
     }
-
+  
     a {
         color: black;
         text-decoration: none;
     }
-
+  
     a:hover {
         text-decoration: underline;
     }
-
-    #mention_container {
+  
+    #mention_container{
         display: grid;
         grid-template-columns: 40% 60%;
         margin: 1.5% 6%;
     }
-
+  
     #mention_container p {
         display: inline;
     }
-
+  
     #mention_container a {
         text-decoration: underline;
     }
