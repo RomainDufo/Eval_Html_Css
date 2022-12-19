@@ -244,7 +244,6 @@ ul {
 
 }
 
-/*bloc paragraphe+image*/
 .para {
 
     width: 90%;
@@ -296,7 +295,6 @@ footer {
     background-color: red;
 }
 
-/*bloc principal de la page*/
 #main {
     width: 100%;
     margin: 0;
@@ -305,7 +303,6 @@ footer {
     grid-template-columns: 50% 50%;
 }
 
-/*bloc gauche de la page*/
 #left {
     background-color: rgba(240, 208, 68, 0.87);
     float: left;
@@ -318,7 +315,6 @@ footer {
 
 }
 
-/*bloc droit de la page*/
 #right {
     background-color: rgba(240, 208, 68, 0.87);
     margin-top: 0;
@@ -390,7 +386,6 @@ iframe {
     margin-top: 100px;
 }
 
-/*bloc qui contient les boutons*/
 .boutons {
     grid-column-start: 1;
     grid-column-end: -1;
